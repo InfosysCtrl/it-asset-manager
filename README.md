@@ -1,48 +1,26 @@
-# it-asset-manager
-> Học thêm nữa để có kỹ năng đi tà đạo, ăn trộm cũng phải có chuyên môn mà 🤣
+# IT Asset Manager
 
-## Chức năng
+Hệ thống quản lý thiết bị CNTT chạy trong mạng LAN, thay thế việc quản lý bằng Excel.
 
-            ┌──────────────┐
-            │   Web UI     │
-            │              │
-            │ Thiết bị     │
-            │ Tìm kiếm     │
-            │ Thêm / sửa   │
-            │ Xóa          │
-            └──────┬───────┘
-                   │
-                   ▼
-            ┌──────────────┐
-            │   FastAPI    │
-            │     API      │
-            └──────┬───────┘
-                   │
-                   ▼
-            ┌──────────────┐
-            │ PostgreSQL   │
-            │              │
-            │ devices      │
-            │ employees    │
-            │ software     │
-            │ history      │
-            └──────┬───────┘
-                   │
-      ┌────────────┴────────────┐
-      ▼                         ▼
-Import Excel               Export Excel
+## Tech stack
 
-- Website quản lý thiết bị cty.
-- Thêm, xóa, sửa thiết bị.
-- Có thể import và export data thông qua file excel.
-- ...
+- **Backend:** NestJS, Prisma, PostgreSQL
+- **Frontend:** Next.js, React, Tailwind CSS
+- **Ngôn ngữ:** TypeScript
+- **Triển khai:** Docker Compose
 
-## Installation
+## Kiến trúc
 
-- Python
-- Nodejs
+Browser → Next.js → REST API (NestJS) → Prisma → PostgreSQL
 
-```bash
-git clone <repo>
-cd project
-npm install
+## Tính năng (MVP)
+
+- [ ] Quản lý thiết bị (thêm/sửa/xóa/tìm kiếm)
+- [ ] Import/Export Excel
+- [ ] Quản lý vị trí, nhân viên, phòng ban
+- [ ] Cấp phát / thu hồi thiết bị, lưu lịch sử
+- [ ] Dashboard
+
+## Cài đặt
+
+_Đang cập nhật._
