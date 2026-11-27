@@ -1,0 +1,7 @@
+{
+    "name": "it-asset-manager",
+    "version": "0.1.0",
+    "private": true,
+    "description": "IT asset management system for LAN deployment",
+    "scripts": {}
+}
